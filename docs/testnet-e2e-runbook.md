@@ -38,6 +38,14 @@ This runbook is the release evidence path for the Vela payment lifecycle.
    and confirm the matching Horizon row is labeled `Indexed by Vela`. Compare
    this application index with Horizon before capturing the final evidence.
 
+## Deterministic Horizon fixtures
+
+Offline tests use the sanitized responses in `test/fixtures/horizon/` for
+successful and rejected transaction lookups. The fixtures use synthetic hashes
+and ledger numbers, never live transaction data or credentials. Use them for
+unit and integration tests; reserve real Horizon calls for explicitly enabled
+testnet verification and record the network separately from fixture results.
+
 ## Evidence checklist
 
 Attach the request/intent IDs, sanitized API responses, Horizon link, and screenshots of the receiver waiting and success states. Do not attach secrets, access tokens, seed phrases, or raw private key material.

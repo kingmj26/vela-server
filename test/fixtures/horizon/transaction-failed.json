@@ -1,0 +1,8 @@
+{
+  "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "successful": false,
+  "ledger_attr": 778,
+  "result_codes": {
+    "transaction": "tx_insufficient_balance"
+  }
+}
